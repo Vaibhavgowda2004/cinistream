@@ -44,12 +44,13 @@ src/
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-Screenshots/Home.png
+![Home](screenshots/home.png)
+
 
 ### 🎬 Movies Section
-"C:\Users\vaibh\.gemini\antigravity\scratch\CINISTREAM\ScreenShots\movies.png.png"
+![Movies](screenshots/movies.png)
 ### 📄 Movie Sugetsion
-"C:\Users\vaibh\.gemini\antigravity\scratch\CINISTREAM\ScreenShots\Movies Sugestion.png.png"
+ ![Suggestion](screenshots/suggestion.png)
 
 
 
