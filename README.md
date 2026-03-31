@@ -44,7 +44,7 @@ src/
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-"ScreenShots/Home.png.png"
+![Home](screenShots/home..png.png)
 
 ### 🎬 Movies Section
 "C:\Users\vaibh\.gemini\antigravity\scratch\CINISTREAM\ScreenShots\movies.png.png"
