@@ -1,0 +1,183 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
+}
+
+.navBlack {
+    background-color: #141414;
+}
+
+.navLeft,
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff004f, #ff7a00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li {
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+    color: #e5e5e5;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.navLinks li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navLinks li:hover::after,
+.navLinks li.active::after {
+    width: 100%;
+}
+
+.navLinks li:hover {
+    color: #b3b3b3;
+}
+
+.navLinks li.active {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 2px 4px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.searchBox.expanded {
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.searchInput {
+    width: 0;
+    opacity: 0;
+    border: none;
+    background: transparent;
+    color: white;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    outline: none;
+    padding: 0;
+}
+
+.searchBox.expanded .searchInput {
+    width: 200px;
+    opacity: 1;
+    padding: 5px 10px;
+}
+
+.profileContainer {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    /* Increase padding to bridge the gap to the dropdown */
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #333;
+    padding: 10px;
+    width: 150px;
+    border-radius: 4px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.profileContainer:hover .dropdown,
+.dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown li {
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 20px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+}

@@ -1,0 +1,56 @@
+.footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 4%;
+    color: #757575;
+    /* Netflix footer grey */
+    font-size: 13px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-bottom: 30px;
+}
+
+.contact a {
+    color: #757575;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 16px;
+}
+
+.links a {
+    color: #757575;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

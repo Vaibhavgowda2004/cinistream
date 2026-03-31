@@ -1,0 +1,67 @@
+.row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.title {
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin: 0 4% 0.5em 4%;
+    line-height: 1.25vw;
+}
+
+.sliderContainer {
+    position: relative;
+    padding: 0 4%;
+}
+
+.posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px 0;
+    gap: 8px;
+    scroll-behavior: smooth;
+    transition: transform 0.4s ease-in-out;
+}
+
+.posters::-webkit-scrollbar {
+    display: none;
+}
+
+.sliderArrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.sliderArrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 2.5rem;
+}
+
+.leftArrow {
+    left: 0;
+}
+
+.rightArrow {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.2rem;
+        margin: 0 20px 10px;
+    }
+}

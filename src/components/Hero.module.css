@@ -1,0 +1,133 @@
+.hero {
+    position: relative;
+    height: 80vh;
+    color: white;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center center;
+    /* Placeholder background for development until dynamic images load */
+    background-image: url('https://image.tmdb.org/t/p/original/5mCPjHPEYwK2M2u11JjOQhRCHoZ.jpg');
+}
+
+.heroContent {
+    position: absolute;
+    top: 30%;
+    /* Lower-left positioning */
+    left: 50px;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.heroTitle {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.heroDescription {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    max-width: 400px;
+    /* Limit line length per spec */
+    height: 80px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Max 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.heroButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.playButton {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+.moreInfoButton {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+/* Gradient overlay */
+.heroFadeBottom {
+    position: absolute;
+    bottom: 0;
+    height: 14.8rem;
+    width: 100%;
+    background-image: linear-gradient(180deg,
+            transparent,
+            rgba(37, 37, 37, 0.61),
+            #141414);
+    z-index: 0;
+}
+
+.heroFadeLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background-image: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            transparent 100%);
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .heroContent {
+        left: 20px;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroDescription {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fadeOut {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-out;
+}
