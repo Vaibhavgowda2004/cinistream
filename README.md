@@ -22,7 +22,7 @@ Cinistream is a Netflix-inspired movie streaming web application that allows use
 - Vite
 - JavaScript (ES6+)
 - CSS Modules
-- Movie API (TMDB or alternative)
+- Movie API (OMDB or alternative)
 
 ---
 
