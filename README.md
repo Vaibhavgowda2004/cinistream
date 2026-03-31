@@ -36,7 +36,7 @@ Cinistream is a Netflix-inspired movie streaming web application that allows use
 ![Movies](Screenshots/movies.png)
 
 ### 📄 Movie Suggestion
-![Suggestion](Screenshots/Movies Suggestion.png)
+![Suggestion](Screenshots/MoviesSuggestion.png)
 
 ---
 
