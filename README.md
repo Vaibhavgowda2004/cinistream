@@ -27,3 +27,44 @@ Cinistream is a Netflix-inspired movie streaming web application that allows use
 ---
 
 ## 📂 Project Structure
+public
+Screenshots
+src/
+├── .env
+├── .gigatone
+├── ReadMe
+├── eslint.config
+├── index.html
+└── package.json
+|_vite.config.js
+
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+"C:\Users\vaibh\.gemini\antigravity\scratch\CINISTREAM\ScreenShots\Home.png.png"
+
+### 🎬 Movies Section
+"C:\Users\vaibh\.gemini\antigravity\scratch\CINISTREAM\ScreenShots\movies.png.png"
+### 📄 Movie Sugetsion
+"C:\Users\vaibh\.gemini\antigravity\scratch\CINISTREAM\ScreenShots\Movies Sugestion.png.png"
+
+
+
+---
+
+## 🌐 Live Demo
+
+(Add your deployed link here)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Vaibhavgowda2004/cinistream.git
+cd cinistream
+npm install
+npm run dev
